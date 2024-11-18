@@ -1,9 +1,15 @@
 <?php
-/* declare(stricts_types=1);  */
+declare(strict_types=1);
 // habilita checkeos mucho más estrictos para los tipos de datos
 #Inicializar una nueva sesión de cURL; ch = cURL handle
 
-const API_URL = "https://whenisthenextmcufilm.com/api";
+function render_template (string $template, array $data = [])
+{
+    extract($data); //convierte los atributos del $data(array asociativo) en variables (ej: $title)
+    require "./templates/$template.php";
+}
+
+
 
 /* Forma de tratar con las API con conocimiento de los estados y pudiendo hacer GET, POST, PUT, etc. */
 /*$ch = curl_init(($API_URL));
@@ -28,8 +34,8 @@ return $data;
 function get_until_message (int $days): string 
 {
     return match (true) {
-        $days = 1 => "¡¡Se estrena es HOY!!🙌🙌",
-        $days = 2 => "¡¡Se estrena MAÑANA!!😜👌",
+        $days === 1 => "¡¡Se estrena es HOY!!🙌🙌",
+        $days === 2 => "¡¡Se estrena MAÑANA!!😜👌",
         $days < 7 => "¡¡Se estrena en esta semana!!😎",
         $days < 31 => "¡¡Se estrena este mes!! 📅",
         default => "Quedan $days días para el estreno 📅 ",
