@@ -25,10 +25,11 @@ curl_close($ch); */
 es la opción más fácil en el caso de que solo quieras hacer un GET de una API. Con el cURL es más fácil ver los estados, y sirve también para hacer POST, PUT, etc */
 
 /* no es necesario poner string y array (si no está declarado strict_types), pero es una forma de decirle el dato de entrada y salida */
-function get_data(string $url) : array { // la convención en métodos nativos es usar snake_case (se puede usar camelCase u otros también)
-$result = file_get_contents($url);
-$data = json_decode($result, true); //decodificamos el json que hemos recibido de la API
-return $data;
+function get_data(string $url): array
+{ // la convención en métodos nativos es usar snake_case (se puede usar camelCase u otros también)
+    $result = file_get_contents($url);
+    $data = json_decode($result, true); //decodificamos el json que hemos recibido de la API
+    return $data;
 }
 
 function get_until_message (int $days): string 

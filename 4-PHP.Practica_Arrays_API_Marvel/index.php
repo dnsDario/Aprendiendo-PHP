@@ -21,4 +21,4 @@ $untilMessage2 = get_until_message(($data["following_production"]["days_until"])
     $data,
     ["until_message" => $untilMessage], 
     ["until_message2" => $untilMessage2]// a parte del array, añadimos como si fuera otro atributo que dentro de la función, el "extract" convierte en variable de nuevo y desde ahí ya puede acceder a ella el main
-) );?>
+))?>
