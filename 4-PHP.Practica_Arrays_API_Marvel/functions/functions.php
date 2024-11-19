@@ -32,14 +32,14 @@ function get_data(string $url): array
     return $data;
 }
 
-function get_until_message (int $days): string 
-{
-    return match (true) {
-        $days === 1 => "¡¡Se estrena es HOY!!🙌🙌",
-        $days === 2 => "¡¡Se estrena MAÑANA!!😜👌",
-        $days < 7 => "¡¡Se estrena en esta semana!!😎",
-        $days < 31 => "¡¡Se estrena este mes!! 📅",
-        default => "Quedan $days días para el estreno 📅 ",
-    };
-}
+function get_until_message(string $days): string
+    {
+        return match (true) {
+            $days === 1 => "¡¡Se estrena es HOY!!🙌🙌",
+            $days === 2 => "¡¡Se estrena MAÑANA!!😜👌",
+            $days < 7 => "¡¡Se estrena en esta semana!!😎",
+            $days < 31 => "¡¡Se estrena este mes!! 📅",
+            default => "Quedan $days días para el estreno 📅 ",
+        };
+    }
 ?>
