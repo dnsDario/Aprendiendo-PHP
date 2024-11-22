@@ -1,20 +1,17 @@
 <?php 
 // Crear un código que pasado un número nos diga cuántas veces es necesario elevarlo para que pase de 10000
 
-$cifraASuperar = 10000;
-$resultado = 0;
+$numero = 15;
 $nVecesElevado = 1;
-$numero = 11;
-$numero2 = 150;
+$resultado = 0;
 
+$resultado = $numero;
 
-for($i=1; $resultado < $cifraASuperar; $i++)
+for($i=2; $resultado < 10000; $i++)
 {
-    $resultado= $numero2 * ($numero2**$i);
-    $i++;
+    $resultado *= $numero;
     $nVecesElevado = $i;
 }
-echo $resultado;
 ?>
 
-<h1> <?= $nVecesElevado?> </h1>
+<h2>El número <?= $numero?>^<?= $nVecesElevado?> supera los 10mil, y su resultado final sería <?= $resultado?> </h2>
