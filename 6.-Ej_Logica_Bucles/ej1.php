@@ -10,6 +10,7 @@ $resultado = $numero;
 for($i=2; $resultado < 10000; $i++)
 {
     $resultado *= $numero;
+  //$resultado = pow(nBase, nElevado) -- también sirve para elevar
     $nVecesElevado = $i;
 }
 ?>
