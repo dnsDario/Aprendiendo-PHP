@@ -82,6 +82,42 @@
       </div>
       <!-- tweetbox ends -->
 
+      <?php foreach($twitts as $twitt) {?>
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                <?= $twitt["autor"];?>
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span><?= $twitt["userName"];?></span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p><?= $twitt["texto"];?></p>
+            </div>
+          </div>
+          <img
+            src="./images/Luffy_Nika_Gear5.jpeg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <?php };?>
+
       <!-- post starts -->
       <div class="post">
         <div class="post__avatar">
@@ -102,7 +138,7 @@
               </h3>
             </div>
             <div class="post__headerDescription">
-              <p><?= $comentario;?></p>
+              <p><?= $texto;?></p>
             </div>
           </div>
           <img
