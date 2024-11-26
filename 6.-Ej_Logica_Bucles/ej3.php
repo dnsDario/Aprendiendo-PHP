@@ -6,8 +6,7 @@ $arrayEspaciosAsteriscos = [" "];
 ?>
 
 <ul>
-    <?php for ($nAsteriscos = 0; $nAsteriscos < 5; $nAsteriscos++): ?>
-        
+    <?php for ($nAsteriscos = 1; $nAsteriscos <= 5; $nAsteriscos++): ?>
         <li>
             <?php for ($nEspacios; $nEspacios >= 1; $nEspacios--) {
                 $arrayEspaciosAsteriscos[] = "&nbsp;&nbsp;";
@@ -18,9 +17,6 @@ $arrayEspaciosAsteriscos = [" "];
             echo $filaEspaciosAsteriscos;
             ?>
         </li>
-
-
-
     <?php endfor; ?>
 </ul>
 

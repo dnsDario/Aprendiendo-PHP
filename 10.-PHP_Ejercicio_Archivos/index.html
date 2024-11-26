@@ -3,14 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cuantas Veces Aparece la Palabra en un Archivo</title>
 </head>
 <body>
     <form enctype="multipart/form-data" action="./index.php" method="post">
-        <label for="archivo_quijote">Subir archivo</label>
+        <br>
+        <label for="archivo_quijote">Palabra a buscar:</label>
         <input type="text" name="palabra_quijote">
+        <label for="archivo_quijote">Subir archivo</label>
         <input type="file" name="archivo_quijote">
-        <input type="submit" value="Enviar">
+        <button type="submit">Buscar</button>
     </form>
 </body>
 </html>
+
+<style>
+    body{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        background-color: rgb(240, 240, 240);
+    }       
+    form{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: left;
+        justify-content: center;
+        width: 350px;
+        height: 600px;
+    }
+    input{
+        width: 350px;
+        height: 30px;
+        margin: 10px 0 10px 0;
+    }
+    button
+    {
+        width: 350px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        border: none;
+        margin: 10px 0 10px 0;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    button:hover{
+        scale: 1.02;
+    }
+</style>
