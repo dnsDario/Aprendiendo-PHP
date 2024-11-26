@@ -26,7 +26,7 @@ $twitts = [
     ]
 ];
 
-// El orden donde se coloca el require importa, todo lo que quedamos añadir al archivo tiene que estar antes de la llamada a éste.
+// El orden donde se coloca el require importa, todo lo que queramos importar al archivo tiene que estar antes de la llamada a éste.
 require_once "./index.html"; 
 
 
