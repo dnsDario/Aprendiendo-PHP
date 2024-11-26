@@ -3,24 +3,24 @@ $userName = '@Dario';
 $texto = 'La Gear5 de Luffy es el dios sol Nika, o Joyboy';
 $autor = 'DarioTwitter';
 
-$twitts = [
+$tweets = [
     [
         "texto" => $texto,
         "autor" => $autor,
         "userName" => $userName
     ],
     [
-        "texto" => "Este es el texto del segundo twitt",
+        "texto" => "Este es el texto del segundo tweet",
         "autor" => "Jose Luis",
         "userName" => "@joselu"
     ],
     [
-        "texto" => "Este es el texto del tercer twitt",
+        "texto" => "Este es el texto del tercer tweet",
         "autor" => "Juan",
         "userName" => "@juanillo"
     ],
     [
-        "texto" => "Este es el texto del cuarto twitt",
+        "texto" => "Este es el texto del cuarto tweet",
         "autor" => "Julia",
         "userName" => "@vjuliaTwitter"
     ]

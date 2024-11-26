@@ -82,7 +82,7 @@
       </div>
       <!-- tweetbox ends -->
 
-      <?php foreach($twitts as $twitt) {?>
+      <?php foreach($tweets as $tweet) {?>
       <div class="post">
         <div class="post__avatar">
           <img
@@ -95,14 +95,14 @@
           <div class="post__header">
             <div class="post__headerText">
               <h3>
-                <?= $twitt["autor"];?>
+                <?= $tweet["autor"];?>
                 <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span><?= $twitt["userName"];?></span
+                  ><span class="material-icons post__badge"> verified </span><?= $tweet["userName"];?></span
                 >
               </h3>
             </div>
             <div class="post__headerDescription">
-              <p><?= $twitt["texto"];?></p>
+              <p><?= $tweet["texto"];?></p>
             </div>
           </div>
           <img
