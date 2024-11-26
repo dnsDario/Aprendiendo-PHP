@@ -1,0 +1,39 @@
+{
+    "tweets": [
+        {
+            "texto": "Este es el texto del primer tweet",
+            "autor": "Dario",
+            "userName": "@Dario"
+        },
+        {
+            "texto": "Este es el texto del segundo tweet",
+            "autor": "Jose Luis",
+            "userName": "@joselu"
+        },
+        {
+            "texto": "Este es el texto del tercer tweet",
+            "autor": "Juan",
+            "userName": "@juanillo"
+        },
+        {
+            "texto": "Este es el texto del cuarto tweet",
+            "autor": "Julia",
+            "userName": "@vjuliaTwitter"
+        },
+        {
+            "texto": "Este es el texto del quinto tweet",
+            "autor": "María",
+            "userName": "@maria"
+        },
+        {
+            "texto": "Este es el texto del sexto tweet",
+            "autor": "lucia",
+            "userName": "@lucia"
+        },
+        {
+            "texto": "Este es el texto del séptimo tweet",
+            "autor": "laura",
+            "userName": "@laura"
+        }
+    ]
+}
