@@ -65,17 +65,11 @@ $hero1->powers = ["regeneración", "esqueleto y cuchillas de adamantium", "fuerz
 
 $hero2 = new superHero("Deadpool", ["regeneración", "fuerza", "agilidad"], "La Tierra");
 
-print_r($hero1); //vemos el objeto
-print_r($hero2);
-
-print_r($hero1->description()); //vemos el resultado del método
-print_r($hero2->description());
-
 print_r($hero1->show_all());  //vemos propiedades y valores
 var_dump($hero1->show_all()); //vemos las propiedades y valores, con el tipo de dato que son
 
 //----- MÉTODO ESTÁTICO ------
 $hero3 = Superhero::random(); //acceso al método estático por el cuál en este caso me dará un héroe aleatorio
-print_r($hero3);
-print_r($hero3->description());
+
+
 ?>
