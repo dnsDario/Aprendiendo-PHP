@@ -3,7 +3,7 @@
     class Persona
     {
         
-        public function __construct(private string $nombre, private string $apellido, private string $email, private int $peso, private int $altura){}
+        public function __construct(protected string $nombre, protected string $apellido, protected string $email, protected int $peso, protected int $altura){}
 
         /**
          * Get the value of email
@@ -63,6 +63,25 @@
                 $this->altura = $altura;
 
                 return $this;
+        }
+
+        public function calcularIMC(int $altura, int $peso): string
+        {
+                $IMC = $peso / pow(($altura / 100), 2);
+                $IMC = round($IMC, 2);
+                
+                if ($IMC < 19) {
+                        $estadoPersona = "Estás en estado de delgadez";
+                    } elseif ($IMC < 25) {
+                        $estadoPersona ="Estás en estado normal";
+                    } elseif ($IMC < 30) {
+                        $estadoPersona ="Estás en estado de sobrepeso";
+                    } else {
+                        $estadoPersona ="Estás en obesidad";
+                    }
+                $mensajeIMC = "El IMC es del $IMC% y $estadoPersona";
+
+                return $mensajeIMC;
         }
     }   
 ?>

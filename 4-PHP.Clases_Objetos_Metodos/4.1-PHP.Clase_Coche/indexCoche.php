@@ -1,8 +1,8 @@
 <?php 
-require_once 'claseCoche.php';
+require_once './claseCoche.php';
 
-$micoche = new Coche("Seat", "Ibiza", "8245KTJ", 100, 6, 20);
-$coche2 = new Coche("Renault", "Megane", "3299KWJ", 100, 6, 20);
+$micoche = new Coche(4,"Seat", "Ibiza", "8245KTJ", 100, 6, 20);
+$coche2 = new Coche(4,"Renault", "Megane", "3299KWJ", 100, 6, 20);
 
 
 $micoche->repostarCombustible(20);
