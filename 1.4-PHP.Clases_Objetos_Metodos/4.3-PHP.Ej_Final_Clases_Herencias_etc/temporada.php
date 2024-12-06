@@ -3,8 +3,12 @@ require_once 'Serie.php';
 
 class Temporada extends Serie
 {
-	public function __construct(protected int $nTemporada, protected int $capitulos, protected int $añoEstreno, string $tituloSerie){
+	public function __construct(protected int $nTemporada, protected array $capitulos, protected int $añoEstreno, string $tituloSerie){
 		parent::__construct($tituloSerie);
+	}
+
+	public function addCapitulo(Capitulo $capitulo){
+		$this->capitulos[] = $capitulo;
 	}
 
 	/**

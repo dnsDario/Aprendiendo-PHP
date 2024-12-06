@@ -1,0 +1,14 @@
+{
+    "name": "vendor/namespaces",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Namespaces\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Darioooo"
+        }
+    ],
+    "require": {}
+}

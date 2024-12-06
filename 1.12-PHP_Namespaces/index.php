@@ -1,11 +1,10 @@
 <?php 
-require_once 'Facebook_Login.php';
-require_once 'Google_Login.php';
+require_once "vendor/autoload.php";
 
-use Facebook\User as FacebookUser;
-use Google\User as GoogleUser;
+use Vendor\Namespaces\Facebook\User as FacebookUser;
+use Vendor\Namespaces\Google\User as GoogleUser;
 
-    $type = "facebook";
+    $type = "google";
 
     if($type == "facebook"){
         $facebookUser = new FacebookUser();

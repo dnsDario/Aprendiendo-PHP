@@ -1,5 +1,5 @@
 <?php
-namespace Google;
+namespace Vendor\Namespaces\Facebook;
 
     class User
     {

@@ -2,7 +2,11 @@
 
 class Serie
 {
-	public function __construct(protected string $tituloSerie, protected string $genero, protected int $añoEstreno, protected int $nTemporadas){}
+	public function __construct(protected string $tituloSerie, protected string $genero, protected int $añoEstreno, protected array $temporadas){}
+
+	public function addTemporada(Temporada $temporada){
+		$this->temporadas[] = $temporada;
+	}
 	
 	/**
 	 * Get the value of tituloSerie
@@ -69,9 +73,9 @@ class Serie
 	/**
 	 * Get the value of nTemporadas
 	 */ 
-	public function getNTemporadas()
+	public function getTemporadas()
 	{
-		return $this->nTemporadas;
+		return $this->temporadas;
 	}
 
 	/**
@@ -79,9 +83,9 @@ class Serie
 	 *
 	 * @return  self
 	 */ 
-	public function setNTemporadas($nTemporadas)
+	public function setTemporadas($nTemporadas)
 	{
-		$this->nTemporadas = $nTemporadas;
+		$this->temporadas = $nTemporadas;
 
 		return $this;
 	}
