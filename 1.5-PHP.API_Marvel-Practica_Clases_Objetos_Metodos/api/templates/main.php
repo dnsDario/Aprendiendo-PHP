@@ -1,5 +1,4 @@
 <main>
-    <!--<?php var_dump($data);?> -->
     <section>
         <h4>La próxima película de Marvel se estrenará: <?= $until_message ?></h4>
         <h1> <?= $title ?></h2>

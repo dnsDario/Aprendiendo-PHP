@@ -14,7 +14,7 @@ $untilMessage2 = get_until_message(($data["following_production"]["days_until"])
 ?>
 
 <?php render_template('head', ["title" => $next_movie_data["title"]]);?>
-<?php require('./templates/styles.php');?>
+<?php require('../templates/styles.php');?>
 <?php render_template('main', array_merge(
     $next_movie_data,
     ["until_message" => $next_movie->get_until_message()],
